@@ -10,8 +10,6 @@ import { Validators} from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 
-
-
 export class LoginComponent implements OnInit {
   form: FormGroup;
 
@@ -19,12 +17,17 @@ export class LoginComponent implements OnInit {
   constructor(private formBuilder: FormBuilder){ 
     ///Creamos el grupo de controles para el formulario de login
     this.form= this.formBuilder.group({
-      password:['password',[Validators.required, Validators.minLength(8)]],
-      email:['email', [Validators.required, Validators.email]],
+      username: ['',[Validators.required, Validators.minLength(4), Validators.maxLength(12)]],
+      password:['',[Validators.required, Validators.minLength(8)]],
+      email:['', [Validators.required, Validators.email]],
    })
   }
 
   ngOnInit() {}
+
+  get Username(){
+    return this.form.get("username");
+  }
 
   get Password(){
     return this.form.get("password");
@@ -42,7 +45,6 @@ export class LoginComponent implements OnInit {
     return false
   }
  
-
   onEnviar(event: Event){
     // Detenemos la propagación o ejecución del compotamiento submit de un form
     event.preventDefault; 
@@ -55,8 +57,5 @@ export class LoginComponent implements OnInit {
       // Corremos todas las validaciones para que se ejecuten los mensajes de error en el template     
       this.form.markAllAsTouched(); 
     }
- 
   }
-
-
 }
