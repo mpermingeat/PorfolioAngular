@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TituloComponent } from '../titulo/titulo.component';
 import { faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 
 @Component({

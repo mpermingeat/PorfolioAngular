@@ -7,10 +7,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
-import { TituloComponent } from './components/titulo/titulo.component';
-import { ButtonAddComponent } from './components/button-add/button-add.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ItemExpComponent } from './components/item-exp/item-exp.component';
+import { HeaderComponent } from './components/header/header.component';
+import { EducacionComponent } from './components/educacion/educacion.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
+import { HabilidadesComponent } from './components/habilidades/habilidades.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -18,9 +22,13 @@ import { ItemExpComponent } from './components/item-exp/item-exp.component';
     AppComponent,
     LoginComponent,
     ExperienciaComponent,
-    TituloComponent,
-    ButtonAddComponent,
-    ItemExpComponent
+    ItemExpComponent,
+    HeaderComponent,
+    EducacionComponent,
+    PerfilComponent,
+    HabilidadesComponent,
+    ProyectosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
