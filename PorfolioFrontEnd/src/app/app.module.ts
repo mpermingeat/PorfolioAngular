@@ -10,6 +10,7 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
 import { TituloComponent } from './components/titulo/titulo.component';
 import { ButtonAddComponent } from './components/button-add/button-add.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ItemExpComponent } from './components/item-exp/item-exp.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     LoginComponent,
     ExperienciaComponent,
     TituloComponent,
-    ButtonAddComponent
+    ButtonAddComponent,
+    ItemExpComponent
   ],
   imports: [
     BrowserModule,
