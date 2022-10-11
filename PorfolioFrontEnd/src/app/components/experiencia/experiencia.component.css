@@ -1,7 +1,4 @@
-app-titulo{
-    margin-left: 2%;
-    margin-right: 2%;
-}
+
 app-item-exp {
     margin-left: 2%;
     margin-right: 2%;
@@ -9,4 +6,13 @@ app-item-exp {
 #cadr-exp{
     margin: 5px 10px;
     border: solid 1px;
+    
+    
+}
+#botonesEdit{
+    
+    
+}
+#botonAdd{
+    
 }

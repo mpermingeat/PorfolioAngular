@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import { faPencil } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faPencil } from '@fortawesome/free-solid-svg-icons';
+
+
 @Component({
   selector: 'app-item-exp',
   templateUrl: './item-exp.component.html',
@@ -8,7 +9,9 @@ import { faPencil } from '@fortawesome/free-solid-svg-icons';
 })
 export class ItemExpComponent implements OnInit {
   faTimes = faTimes;
-  faPencil =faPencil;
+  faPencil = faPencil;
+  
+
   constructor() { }
 
   ngOnInit(): void {

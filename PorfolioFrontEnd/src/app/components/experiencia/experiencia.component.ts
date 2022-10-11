@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TituloComponent } from '../titulo/titulo.component';
+import { faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-experiencia',
@@ -7,7 +8,7 @@ import { TituloComponent } from '../titulo/titulo.component';
   styleUrls: ['./experiencia.component.css']
 })
 export class ExperienciaComponent implements OnInit {
-
+  faPlusSquare = faPlusSquare;
   constructor() { }
 
   ngOnInit(): void {
