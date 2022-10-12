@@ -1,0 +1,57 @@
+{
+    "name": "Nicolas Jaula",
+    "backImage": "https://fondosmil.com/fondo/32512.png",
+    "image": "https://www.placecage.com/g/200/300",
+    "description": "cargo actual ",
+    "company":{
+        "name": "empresa",
+        "img": "",
+        "url": "#"
+    },
+    
+    "ubication": "ciudad provician etc",
+    "about": "titulos y demas",
+    "experience":[{
+        "position": "Backend developer y descripcion del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet porro dolorum temporibus molestias quos fugit recusandae est sequi deleniti exercitationem fugiat obcaecati, unde a esse et delectus! Labore, nulla doloribus.",
+        "company": "empresa 1",
+        "img": "https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png",
+        "mode": "#",
+        "start": "2019",
+        "end":  "2022",
+        "timeElasep": "duracion del trabajo"
+    },
+    {
+        "position": "Backend developer y descripcion del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet porro dolorum temporibus molestias quos fugit recusandae est sequi deleniti exercitationem fugiat obcaecati, unde a esse et delectus! Labore, nulla doloribus.",
+        "company": "empresa 2",
+        "img": "https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png",
+        "mode": "#",
+        "start": "2017",
+        "end":  "2019",
+        "timeElasep": "duracion del trabajo"
+    }],
+    "education": [{
+        "school": "Nombre de la Institucion ",
+        "title": "titulo de la carrera",
+        "img": "#",
+        "career": "carrera estudiada Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet porro dolorum temporibus molestias quos fugit recusandae est sequi deleniti exercitationem fugiat obcaecati, unde a esse et delectus! Labore, nulla doloribus.",
+        "score": 0,
+        "start": "2014",
+        "end": "2018"
+    }],
+    "habilidades":[{
+        "habilidad": "Habilidad",
+        "porcentage": "65",
+        "porcentageBarra": "width: 65%",
+        "tipo": "blanda"
+    },
+    {
+        "habilidad": "Habilidad 2",
+        "porcentage": "85",
+        "porcentageBarra": "width: 85%",
+        "tipo": "dura"
+    }],
+    "proyectos":[{
+        "nombre": "Nombre del Proyecto",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet porro dolorum temporibus molestias quos fugit recusandae est sequi deleniti exercitationem fugiat obcaecati, unde a esse et delectus! Labore, nulla doloribus."
+    }]
+}

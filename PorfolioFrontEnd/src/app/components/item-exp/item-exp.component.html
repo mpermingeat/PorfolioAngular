@@ -1,26 +1,20 @@
-<div class="exp">
-    <div class="row g-0">
-        <div class="col-md-2">
-          <img src="../../../assets/img/placeholderEjemplo.png" class="img-fluid rounded-start" alt="..." id="logos">
-        </div>
-        <div class="col-md-10">
-          <div class="card-body ">
-            <h2 class="card-title d-inline">Nombre de la Empresa</h2>
-            <div class="conteiner d-inline" id="botonesEdit">
-                <fa-icon 
-                [icon]="faPencil"
-                class="iconsEdit"
-                             
-            ></fa-icon>
-                <fa-icon 
-                [icon]="faTimes"
-                class="iconsEdit"
-                 
-            ></fa-icon>
-            </div>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet porro dolorum temporibus molestias quos fugit recusandae est sequi deleniti exercitationem fugiat obcaecati, unde a esse et delectus! Labore, nulla doloribus.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
+<li *ngFor="let experiencia of experienciaList" id="listas">
+  <div class="row g-0">
+    <div class="col-md-2">
+      <img 
+      [src]="experiencia.img"
+      class="img-fluid rounded-start" alt="..." id="logos">
     </div>
-</div>
+    <div class="col-md-10">
+      <div class="card-body">
+        <h3 class="card-title">{{experiencia.company}}</h3>
+        <div class="conteiner" id="botonesEdit">
+          <i class="bi bi-pencil"></i>
+          <i class="bi bi-x"></i>
+        </div>
+        <p class="card-text">{{experiencia.position}}</p>
+        <p class="card-text"><time class="text-muted">{{experiencia.start}}</time>  -  <time class="text-muted">{{experiencia.end}}</time> </p>
+      </div>
+    </div>
+  </div>
+</li>

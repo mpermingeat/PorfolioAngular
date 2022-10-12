@@ -2,7 +2,9 @@ nav{
     background-color: #343498;
 }
 #body{
-    margin: 10px;
+    
+    background-color: #343498;
+    padding: 10px;
 }
 h1{
     margin-left: 10px;
@@ -70,4 +72,13 @@ i{
 }
 #cards{
     padding: 10px;
+    background-color: rgba(255, 255, 255, 0.85);
+    
+}
+#listas{
+    list-style: none;
+}
+#cardPerfil{
+    
+    background-color: rgba(255, 255, 255, 0.85);
 }

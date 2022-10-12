@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faTimes, faPencil } from '@fortawesome/free-solid-svg-icons';
+import { subscribeOn } from 'rxjs';
+import { PortfolioService } from 'src/app/service/portfolio.service';
 
 
 @Component({
@@ -8,13 +9,15 @@ import { faTimes, faPencil } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./item-exp.component.css']
 })
 export class ItemExpComponent implements OnInit {
-  faTimes = faTimes;
-  faPencil = faPencil;
+ experienciaList:any;
   
 
-  constructor() { }
+  constructor(private datosPortfolio:PortfolioService) { }
 
   ngOnInit(): void {
+    this.datosPortfolio.obtenerDatos().subscribe(data =>{
+      this.experienciaList=data.experience;
+    })
   }
 
 }

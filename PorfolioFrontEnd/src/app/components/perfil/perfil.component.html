@@ -1,14 +1,21 @@
 <div class="conteiner-fluid">
-    <div class="card mb-3">
-      <img src="../../../assets/img/fondoAzul.png" class="card-img-top" alt="...">
-      <img src="../../../assets/img/placeholderEjemplo.png" class="rounded float-start" id="fotoPerfil" alt="...">
-      <div class="card-body">
+    <div class="card mb-3" id="cardPerfil">
+      <img 
+        [src]="miPortfolio.backImage" 
+        class="card-img-top" alt="...">
+      <img 
+        [src]="miPortfolio.image" 
+        class="rounded float-start" 
+        id="fotoPerfil" alt="...">
+      <div class="card-body" >
         <div class="conteiner-fuid">
-          <h5 class="d-inline card-title">Nombre Apellido</h5>
+          <h1 class="d-inline card-title">{{miPortfolio.name}}</h1><!-- data binding para strings del template -->
           <button type="button" class="d-inline btn btn-primary" id="login">Login</button>
         </div>
-        <p class="card-text">descripcion del sujeto en cuestion</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <h4>{{miPortfolio.description}}</h4>
+        <p class="card-text">{{miPortfolio.ubication}}</p>
+        
+        <p class="card-text"><small class="text-muted">ultimo update</small></p>
       </div>
     </div>  
   </div>
